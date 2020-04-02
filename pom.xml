@@ -9,7 +9,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<docker.image.prefix>markramach</docker.image.prefix>
+		<docker.image.prefix>sourabh-gupta</docker.image.prefix>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -82,8 +82,8 @@
 		</plugins>
 	</build>
 	<scm>
-		<url>https://github.com/markramach/spring-boot-prototype-ansible</url>
-		<connection>scm:git:https://github.com/markramach/spring-boot-prototype-ansible.git</connection>
-		<developerConnection>https://github.com/markramach/spring-boot-prototype-ansible.git</developerConnection>
+		<url>https://github.com/sourabh-gupta/spring-boot-ansible-and-docker.git</url>
+		<connection>scm:git:https://github.com/sourabh-gupta/spring-boot-ansible-and-docker.git</connection>
+		<developerConnection>https://github.com/sourabh-gupta/spring-boot-ansible-and-docker.git</developerConnection>
 	</scm>
 </project>
