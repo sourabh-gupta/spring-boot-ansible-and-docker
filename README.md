@@ -59,6 +59,17 @@ Running the `docker images` command should now produce the following output.
 
 To make the image available outside of your local system, you need to push the image to a valid Docker Registry.
 
+Make sure in Maven Setting.xml you should have entry of docker hub server
+
+<server>
+    <id>docker-hub</id>
+    <username>Your DockerHub Username </username>
+    <password>Your DockerHub Password</password>
+    <configuration>
+      <email>Your Docker Hub Account Email</email>
+    </configuration>
+  </server>
+
 To push the new images to the repository run the following command:
 
 	mvn docker:push
@@ -160,9 +171,24 @@ You can verify that the docker container is up and running on the localhost:
 
 Once the Spring Boot application is up and running you can execute a HTTP `GET` request on the sample resource. Depending on your docker setup localhost may not work. If you are running on OS X, you may need to use the IP address of the boot2docker VM.
 
-	http://localhost:8080/say-hello?name=world
-	
-You should see the following response:
+	http://localhost:8080/
 
-	{"hello":"world"}
+
+You should see the login page
+
+Username: admin
+Password: admin
+
+And you can see the home page with message "This is home page"
+
+To Stop/Remove all docker containers use following command.
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+Thanks
+Sourabh Gupta
+
+
+
 	
