@@ -177,6 +177,7 @@ Once the Spring Boot application is up and running you can execute a HTTP `GET` 
 You should see the login page
 
 Username: admin
+
 Password: admin
 
 And you can see the home page with message "This is home page"
@@ -184,9 +185,11 @@ And you can see the home page with message "This is home page"
 To Stop/Remove all docker containers use following command.
 
 docker stop $(docker ps -a -q)
+
 docker rm $(docker ps -a -q)
 
 Thanks
+
 Sourabh Gupta
 
 
