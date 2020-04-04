@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Main Spring Boot application configuration class. 
  * 
- * @author mramach
+ * @author sourabh-gupta
  *
  */
 @SpringBootApplication
